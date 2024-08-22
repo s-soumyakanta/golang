@@ -7,13 +7,19 @@ import (
 
 //Structs are custom data structures in go. These are like similar to classes of other language
 
+// Struct Embedding - to do this wee need to pass it to order struct simly
+type customer struct {
+	name  string
+	phone string
+}
+
 // order struct
 type order struct {
 	id        string
 	amount    float32
 	status    string
 	createdAt time.Time // nono second precision
-
+	customer
 }
 
 // CONSTRUCTOR hack
@@ -80,4 +86,26 @@ func main() {
 	}{"Golang", true}
 
 	fmt.Println(language) //{Golang true}
+
+	//struct embedding
+	// newCustomer := customer{
+	// 	name:  "S S",
+	// 	phone: "3432432",
+	// }
+	orderWithCustomer := order{
+		id:     "3",
+		amount: 34,
+		status: "received",
+		// customer: newCustomer,
+		customer: customer{
+			name:  "Soumya",
+			phone: "3333",
+		},
+	}
+
+	// fmt.Println(orderWithCustomer) //{3 34 received {0 0 <nil>} { }} - empty for customer
+	fmt.Println(orderWithCustomer) //{3 34 received {0 0 <nil>} {Soumya 3333}}
+
+	orderWithCustomer.customer.name = "S Soumyakanta"
+	fmt.Println(orderWithCustomer.customer.name) //S Soumyakanta
 }
