@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-//on for in go no while -> only construct in go for looping
+//only for in go no while -> only construct in go for looping
 func main() {
 	//while loop
 
