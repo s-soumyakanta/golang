@@ -42,6 +42,6 @@ func main() {
 		fmt.Println("Person is teenager", age)
 	}
 
-	//go does not have ternary operater, we have to use if else
+	//go does not have ternary operater, we have to use if else.
 
 }
