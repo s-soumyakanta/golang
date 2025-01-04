@@ -2,17 +2,16 @@ package main
 
 import "fmt"
 
-func main(){
-	//bool
-	fmt.Println(true)
-
-	//string
+func main() {
+	//String
 	fmt.Println("Soumya")
 
-	//float 
-	fmt.Println(2.3)
+	//Bool
+	fmt.Println(true)
 
-	//int
+	//Intiger
 	fmt.Println(33)
 
+	//Float
+	fmt.Println(33.22)
 }
