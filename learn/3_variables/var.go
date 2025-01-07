@@ -21,4 +21,10 @@ func main() {
 	myNum = 22
 
 	fmt.Println(name, langName, isCool, year, myName, myNum)
+
+	var mobile int         //0
+	var isMarried bool     //false
+	var collegeName string //""
+	var marks float32      //0
+	fmt.Println(mobile, isMarried, collegeName, marks)
 }
