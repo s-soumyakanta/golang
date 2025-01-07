@@ -12,4 +12,11 @@ func main() {
 	} else {
 		fmt.Println("Not allowed to bar")
 	}
+
+	var gender = "female"
+	personAge := 3
+
+	if personAge >= 18 || gender == "male" {
+		fmt.Println("Welcome to male bar")
+	}
 }
