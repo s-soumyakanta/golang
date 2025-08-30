@@ -37,4 +37,12 @@ func main() {
 	var height float32
 
 	fmt.Println(name2, age2, height, minor)
+
+	var yearOne, yearTwo int = 1894, 3294
+	fmt.Println(yearTwo)
+	fmt.Println((yearOne))
+	// fmt.Println((yearOne)) works because Go allows unnecessary grouping parentheses.
+
+	var temp int = 32
+	_ = temp // no error, safely ignored using blank identifier
 }
