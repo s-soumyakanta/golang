@@ -30,4 +30,11 @@ func main() {
 	name = "Soumya"
 	mob := 88
 	fmt.Println(name, age, mob)
+
+	var name2 string
+	var age2 int
+	var minor bool
+	var height float32
+
+	fmt.Println(name2, age2, height, minor)
 }
