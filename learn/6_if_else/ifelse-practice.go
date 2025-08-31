@@ -19,4 +19,18 @@ func main() {
 	if personAge >= 18 || gender == "male" {
 		fmt.Println("Welcome to male bar")
 	}
+
+	const mark = 44
+
+	if mark >= 90 {
+		fmt.Println("Grade: A+")
+	} else if mark >= 75 {
+		fmt.Println("Grade: A")
+	} else if mark >= 60 {
+		fmt.Println("Grade: B")
+	} else if mark >= 40 {
+		fmt.Println("Grade: C")
+	} else {
+		fmt.Println("Grade: Fail")
+	}
 }
