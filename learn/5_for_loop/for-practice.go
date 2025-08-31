@@ -27,4 +27,18 @@ func main() {
 	for i := range 5 {
 		fmt.Println(i)
 	}
+
+	for i := 1; i <= 50; i++ {
+
+		if i%5 == 0 {
+			continue
+		}
+
+		if i == 37 {
+			break
+		}
+
+		fmt.Println(i)
+
+	}
 }
