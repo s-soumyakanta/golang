@@ -34,4 +34,14 @@ func main() {
 	default:
 		fmt.Println("Invalid Day Number")
 	}
+
+	const num = 2
+	const even = true
+
+	switch num {
+	case 2:
+		fmt.Println("true")
+	default:
+		fmt.Println("not defined")
+	}
 }
