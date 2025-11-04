@@ -10,7 +10,7 @@ func main() {
 
 	m := make(map[string]string)
 
-	//setting and element
+	//setting an element
 
 	m["name"] = "S Soumyakanta"
 	m["language"] = "JavaScript"

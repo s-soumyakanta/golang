@@ -29,7 +29,7 @@ func main() {
 	pins = append(pins, 6)
 	pins = append(pins, 7)
 	fmt.Println(pins)      //[0 0 2 3 4 5 6 7]
-	fmt.Println(cap(pins)) //10
+	fmt.Println(cap(pins)) //10 - on addition it doubles the capacity
 	fmt.Println(len(pins)) //8
 
 	//direct declare
