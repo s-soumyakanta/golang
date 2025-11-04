@@ -4,6 +4,9 @@ import "fmt"
 
 func main() {
 
+	frnds := [4]string{"x", "y", "z"}
+	frnds[3] = "o"
+	fmt.Println(frnds[3])
 	//2d arrays
 	pins := [2][2]int{{753023, 234323}, {234523, 923423}}
 
