@@ -55,5 +55,11 @@ func main() {
 		4 n
 		5 g */
 	}
+	weekend := make(map[int]string)
+	weekend[1] = "saturday"
+	weekend[2] = "sunday"
+	for i, v := range weekend {
+		fmt.Println(i, v) //1 saturday 2 sunday
 
+	}
 }

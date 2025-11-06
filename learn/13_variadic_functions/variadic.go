@@ -14,6 +14,19 @@ func sum(nums ...int) int {
 
 	return total
 }
+
+func multiply(numbers ...int) int {
+	total := 1
+
+	for _, num := range numbers {
+		if num == 0 {
+			continue
+		}
+		total = total * num
+	}
+	return total
+}
+
 func main() {
 	//Println is a variadic function in go where we can pass n number of arguments
 	fmt.Println(1, 2, 3, 4) //1, 2, 3, 4
@@ -25,4 +38,10 @@ func main() {
 	someNums := []int{4, 9, 3}
 	snResult := sum(someNums...)
 	fmt.Println(snResult) //16
+
+	multiNums := []int{0, 3, 0, 2, 0, 4, 0}
+
+	value := multiply(multiNums...)
+	fmt.Println(value) //24
+
 }

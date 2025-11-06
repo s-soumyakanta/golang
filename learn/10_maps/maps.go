@@ -58,4 +58,12 @@ func main() {
 
 	fmt.Println(maps.Equal(map1, map2)) //true
 
+	toppers := make(map[int]string)
+	toppers[1] = "Soumya"
+	toppers[2] = "Dev"
+	fmt.Println(toppers) //map[1:Soumya 2:Dev]
+
+	dataKey := map[string]string{"ss": "dd"}
+	fmt.Println(dataKey["ss"]) //dd
+
 }

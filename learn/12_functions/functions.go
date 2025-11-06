@@ -25,6 +25,12 @@ func processIt() func(a int) int {
 		return 9 * a
 	}
 }
+
+func multiply() func(a, b int) int {
+	return func(a, b int) int {
+		return a * b
+	}
+}
 func main() {
 
 	fn := processIt()
@@ -36,4 +42,6 @@ func main() {
 	fmt.Println(getLanguages())         //Golang TypeScript 8 true
 	fmt.Println(result)                 //8
 
+	mulFn := multiply()
+	fmt.Println(mulFn(2, 3)) //6
 }
